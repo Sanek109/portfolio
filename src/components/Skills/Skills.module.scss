@@ -1,0 +1,63 @@
+.skills {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+
+  .container {
+    width: 80%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      color: #fdfeff;
+      font-weight: lighter;
+    }
+
+    .listSkills {
+      width: 70%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .skills {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .skills {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+      width: 80%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      .listSkills {
+        width: 100%;
+        display: flex;
+        h1 {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+
+
+

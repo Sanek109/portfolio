@@ -1,26 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Header from "./components/Header/Header";
+import Main from "./components/Main/Main";
+import Skills from "./components/Skills/Skills";
+import Projects from "./components/Projects/Projects";
+import Slogan from "./components/Slogan/Slogan";
+import Contacts from "./components/Contacts/Contacts";
+import Footer from "./components/Footer/Footer";
+import {BrowserRouter, Route} from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+let App = () => {
+    return (
+        <BrowserRouter>
+            <div className="app">
+                <div className='background'>
+                    <div id='stars'></div>
+                </div>
+                <div className="portfolio">
+                    <Header/>
+                    <div id='stars2'></div>
+                    <div className="content">
+                        <Route exact path='/' render={() => <Main/>}/>
+                        <Route path='/skills' render={() => <Skills/>}/>
+                        <Route path='/projects' render={() => <Projects/>}/>
+                        <Route path='/contacts' render={() => <Contacts/>}/>
+                        <div id='stars3'></div>
+                    </div>
+                    {/*<Slogan/>*/}
+                    <Footer/>
+                </div>
+            </div>
+        </BrowserRouter>
+    );
 }
 
 export default App;

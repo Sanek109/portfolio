@@ -1,0 +1,34 @@
+.header {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    .container {
+        width: 75%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+@media only screen and (width: 480px) {
+    .header {
+        .container {
+            width: 95%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+@media only screen and (width: 320px) {
+    .header {
+        .container {
+            width: 95%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+

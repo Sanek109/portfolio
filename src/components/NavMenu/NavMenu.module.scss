@@ -1,0 +1,39 @@
+.navMenu {
+  width: 360px;
+  display: flex;
+  justify-content: space-between;
+
+  .link a.activeLink {
+    color: #fdfeff;
+  }
+
+  a {
+    text-decoration: none;
+    color: #839ac1;
+    font-family: 'Montserrat light', sans-serif;
+    font-size: 18px;
+
+    &:hover {
+      color: #fffff6;
+    }
+  }
+}
+
+@media only screen and (width: 480px) {
+  .navMenu {
+    a {
+      font-size: 20px;
+    }
+  }
+}
+
+@media only screen and (width: 320px) {
+  .navMenu {
+    a {
+      font-size: 18px;
+    }
+  }
+}
+
+
+

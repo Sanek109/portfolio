@@ -1,0 +1,36 @@
+.slogan {
+  height: 250px;
+  //background-color: #60a2ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Montserrat Bold', sans-serif;
+
+  .container {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    h2 {
+      color: #dadee4;
+      font-weight: lighter;
+    }
+
+
+    button {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      width: 200px;
+      height: 40px;
+      border: 0;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: #839ac1;
+      }
+    }
+  }
+}
+
