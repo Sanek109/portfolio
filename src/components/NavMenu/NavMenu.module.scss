@@ -19,16 +19,35 @@
   }
 }
 
-@media only screen and (width: 480px) {
+@media only screen and (width: 768px) {
   .navMenu {
+    display: flex;
+    justify-content: space-around;
+
+    a {
+      font-size: 21px;
+    }
+  }
+}
+
+@media only screen and (width: 375px) {
+  .navMenu {
+    //width: 370px;
+    display: flex;
+    justify-content: space-around;
+
     a {
       font-size: 20px;
     }
   }
 }
 
+//
 @media only screen and (width: 320px) {
   .navMenu {
+    display: flex;
+    justify-content: space-around;
+
     a {
       font-size: 18px;
     }

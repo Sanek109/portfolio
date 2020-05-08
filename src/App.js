@@ -20,7 +20,7 @@ let App = () => {
                     <Header/>
                     <div id='stars2'></div>
                     <div className="content">
-                        <Route exact path='/' render={() => <Main/>}/>
+                        <Route exact path='/portfolio' render={() => <Main/>}/>
                         <Route path='/skills' render={() => <Skills/>}/>
                         <Route path='/projects' render={() => <Projects/>}/>
                         <Route path='/contacts' render={() => <Contacts/>}/>

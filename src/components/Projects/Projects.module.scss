@@ -28,16 +28,6 @@
   }
 }
 
-@media only screen and (max-width : 768px) {
-  .projects {
-    .container {
-      h1 {
-        font-size: 20px;
-      }
-    }
-  };
-}
-
 @media only screen and (max-width : 480px) {
   .projects {
     height: 100%;
@@ -53,7 +43,6 @@
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-
       .myProject {
         width: 100%;
         display: flex;

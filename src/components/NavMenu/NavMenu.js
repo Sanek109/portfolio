@@ -6,7 +6,7 @@ let NavMenu = () => {
   return (
     <div className={styles.navMenu}>
         <div className={styles.link}>
-            <NavLink activeClassName={styles.activeLink} exact to='/'>
+            <NavLink activeClassName={styles.activeLink} exact to='/portfolio'>
                 Главная
             </NavLink>
         </div>
